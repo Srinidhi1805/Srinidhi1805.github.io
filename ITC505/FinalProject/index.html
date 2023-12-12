@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lights Out!</h1>
+    </header>
+    <div id="board"></div>
+    <button id="new" onclick="initializeBoard();">New Game</button>
+    <p>Your Last Win is <span id="lastWin"></span> Moves </p>
+    <footer>
+        <p><b>Addendum</b></p>
+        <a>
+            My development process for this Lights Out game involved several steps and creative choices. Initially, I
+            focused on building the core functionality, including generating a random board, toggling squares, and
+            checking win conditions. I chose to use a grid layout for the board and implemented click event listeners on
+            each square. To achieve a dynamic experience, the starting configuration is generated using backtracking,
+            ensuring a solvable puzzle each time.
+            <br><br>
+            One challenge I faced was ensuring the generated boards were actually solvable. I overcame this by employing
+            a backtracking algorithm within the initialization function, simulating random clicks until a solution was
+            found. This process ensured every generated configuration had a path to victory. Additionally, I implemented
+            a win condition that displays the number of moves it took to solve the puzzle, adding a layer of challenge
+            and engagement.
+            <br><br>
+            Overall, developing this game was a rewarding experience that challenged me to think creatively and apply
+            problem-solving skills. Through the process, I gained valuable insights into implementing algorithms like
+            backtracking and designing user interfaces that are both visually appealing and functional.
+            <br><br>
+            
+        </a>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
